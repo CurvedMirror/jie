@@ -1,4 +1,4 @@
-package bdqn.model;
+package com.bdqn.model;
 
 import java.util.Date;
 
