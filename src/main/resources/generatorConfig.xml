@@ -38,7 +38,7 @@
         targetProject     指定在该项目下所在的路径
         -->
         <javaModelGenerator targetPackage="com.bdqn.model"
-                            targetProject="src/main">
+                            targetProject="src/main/java">
 
             <!-- 是否允许子包，即targetPackage.schemaName.tableName -->
             <property name="enableSubPackages" value="false"/>
@@ -52,7 +52,7 @@
 
         <!--Mapper映射文件生成所在的目录 为每一个数据库的表生成对应的SqlMap文件 -->
         <sqlMapGenerator targetPackage="com.bdqn.mapper"
-                         targetProject="src/main">
+                         targetProject="src/main/java">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
@@ -62,7 +62,7 @@
         type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
         -->
         <javaClientGenerator targetPackage="com.bdqn.dao"
-                             targetProject="src/main" type="XMLMAPPER">
+                             targetProject="src/main/java" type="XMLMAPPER">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
